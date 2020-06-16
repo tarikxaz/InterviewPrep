@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.practice</groupId>
+    <artifactId>PracticeAndNote</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Generic</module>
+        <module>PracticeJava</module>
+        <module>restAPI</module>
+    </modules>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<!--    TestNG in Selenium is a Java testing framework, inspired by JUnit and NUnit.-->
+<!--    From simple unit testing to complex integrated testing,-->
+<!--    it is designed to simplify all our testing requirements such as functional testing,-->
+<!--    regression, end-to-end testing, and more-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+        </dependency>
+
+<!--        Databases-->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.17</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<!--   POI stands For “Poor Obfuscation Implementation”.-->
+<!--   Apache POI is an API provided by Apache foundation which is a collection of different java libraries.-->
+<!--   This libraries gives the facility to read, write and manipulate different Microsoft files such as excel sheet, power-point, and word files.-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.17</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<!--  Apache POI provides Java API for manipulating various file formats based on the Office Open XML (OOXML) standard and OLE2 standard from Microsoft.-->
+<!--  Apache POI releases are available under the Apache License-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.17</version>
+        </dependency>
+
+        <!--for generating report-->
+        <!--https://mvnrepository.com/artifact/com.aventstack/extentreports-->
+<!--        <dependency>-->
+<!--            <groupId>com.aventstack</groupId>-->
+<!--            <artifactId>extentreports</artifactId>-->
+<!--            <version>4.0.9</version>-->
+<!--        </dependency>-->
+
+        <!--https://mvnrepository.com/artifact/com.relevantcodes/extentreports-->
+        <dependency>
+            <groupId>com.relevantcodes</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>2.41.2</version>
+        </dependency>
+
+<!--    The Apache Commons Lang 3 library is a popular, full-featured package of utility classes,-->
+        <!--    aimed at extending the functionality of the Java API-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
+        </dependency>
+
+<!--  Commons IO. Commons IO is a library of utilities to assist with developing IO functionality.-->
+<!--  Utility classes - with static methods to perform common tasks. Input - useful Input Stream and Reader implementations.-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>5.3.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>4.3.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!-- for using RestAssured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+<!--        Hit ScribeJava as hard and with many threads as you like. (it is thread safe)-->
+<!--        You can use it in old environments and in android apps. note: To compile from sources you will need Java 9 or newer-->
+        <dependency>
+            <groupId>com.github.scribejava</groupId>
+            <artifactId>scribejava-apis</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+
+<!--        com.fasterxml.jackson.databind. Contains basic mapper (conversion) functionality that allows for converting-->
+<!--        between regular streaming json content and Java objects (beans or Tree Model: support for both is via ObjectMapper class,-->
+<!--        as well as convenience methods included in JsonParser.-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.10.1</version>
+        </dependency>
+
+        <!-- for using Unirest -->
+
+<!--        Unirest is a lightweight HTTP client library from Mashape. Along with Java, it's also available for Node-->
+
+        <dependency>
+            <groupId>com.mashape.unirest</groupId>
+            <artifactId>unirest-java</artifactId>
+            <version>1.4.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+            <version>4.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.3.6</version>
+        </dependency>
+
+        <!-- for using Json -->
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+        </dependency>
+        <!-- for using simple Json -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+
+            <!--            The compiler plugin is used to compile the source code of a Maven project.-->
+            <!--            This plugin has two goals, which are already bound to specific phases of the default lifecycle: compile – compile main source files.-->
+            <!--            testCompile – compile test source files-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+<!--            The Surefire Plugin is used during the test phase of the build lifecycle to execute the unit tests of an application.-->
+<!--            It generates reports in two different file formats Plain text files (.txt) XML files (.xml)-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <!--<suiteXmlFiles>target/test-classes/AmazonTestRunner.xml</suiteXmlFiles>-->
+                        <!--<suiteXmlFiles>target/test-classes/CNNTestRunner.xml</suiteXmlFiles>  -->
+                        <!--<suiteXmlFiles>target/test-classes/BBCTestRunner.xml</suiteXmlFiles>  -->
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+
+
+</project>
